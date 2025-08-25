@@ -1,0 +1,76 @@
+/* Background */
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Calculator box */
+.calculator {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  width: 320px;
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 1.8em;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+/* Buttons layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Special Buttons */
+.clear {
+  background: #e74c3c;
+}
+.equal {
+  background: #27ae60;
+  grid-column: span 2;
+}
+
+/* Advanced section */
+.advanced {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
